@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
     calculeazaPret();
 
@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function calculeazaPret() {
 
-    let pret = parseInt(document.getElementById("dimensiune").value) || 0;
+    let pret = Number(document.getElementById("dimensiune").value) || 0;
 
-    pret += parseInt(document.getElementById("panou").value) || 0;
+    pret += Number(document.getElementById("panou").value) || 0;
 
     if (document.getElementById("baie").checked) pret += 600;
 
@@ -36,7 +36,9 @@ function trimiteWhatsApp() {
 
     const pret = calculeazaPret();
 
-    const mesaj = `📦 CERERE OFERTĂ GAMA PLUS
+    const mesaj =
+
+`📦 CERERE OFERTĂ GAMA PLUS
 
 👤 Nume: ${document.getElementById("nume").value}
 
@@ -49,6 +51,12 @@ function trimiteWhatsApp() {
 📏 Dimensiune: ${document.getElementById("dimensiune").options[document.getElementById("dimensiune").selectedIndex].text}
 
 🧱 Grosime panou: ${document.getElementById("panou").options[document.getElementById("panou").selectedIndex].text}
+
+🎨 Culoare: ${document.getElementById("culoare").value}
+
+🚪 Uși: ${document.getElementById("usi").value}
+
+🪟 Ferestre: ${document.getElementById("ferestre").value}
 
 🚿 Baie: ${document.getElementById("baie").checked ? "Da" : "Nu"}
 

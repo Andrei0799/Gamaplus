@@ -8,9 +8,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gama PLUS Containere</title>
+<title>GAMA PLUS Containere</title>
+
+<meta name="description" content="Containere modulare, case modulare și construcții din panouri sandwich. Livrare în toată România.">
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,44 +26,81 @@
 
 <header>
 
-<h1>Gama <span>PLUS</span> Containere</h1>
+<div class="container">
 
-<p>Containere modulare premium • Livrare în toată România</p>
+<h1>🏗️ GAMA <span>PLUS</span></h1>
+
+<p>
+
+Containere modulare • Case modulare • Birouri • Depozite
+
+</p>
+
+<div class="butoane">
+
+<a class="telefon" href="tel:0799415521">
+
+📞 0799 415 521
+
+</a>
+
+<a class="whatsapp"
+
+href="https://wa.me/40799415521"
+
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+</div>
+
+</div>
 
 </header>
 
-<section>
+<section class="hero">
 
-<h2>50 Containere Modulare Disponibile</h2>
+<h2>
 
-<p><strong>Preț: 2.900 € / bucată (TVA inclus)</strong></p>
+Containere modulare fabricate la comandă
 
-<p>Transport asigurat oriunde în România 🇷🇴</p>
+</h2>
 
-<a href="tel:0799415521">📞 Sună acum: 079 941 5521</a>
+<p>
+
+Containere standard și personalizate după cerințele clientului.
+
+</p>
+
+<h3>
+
+🔥 Prețuri începând de la 2.200 €
+
+</h3>
 
 </section>
+
 <section id="avantaje">
 
-<h2>De ce să alegi Gama PLUS Containere?</h2>
+<h2>De ce GAMA PLUS?</h2>
 
-<ul>
+<div class="avantaje">
 
-<li>✅ 50 containere disponibile din stoc</li>
+<div>✅ Producător</div>
 
-<li>✅ Preț: 2.900 € / bucată (TVA inclus)</li>
+<div>✅ Livrare în toată România</div>
 
-<li>✅ Transport asigurat în toată România</li>
+<div>✅ Structură metalică rezistentă</div>
 
-<li>✅ Structură metalică rezistentă</li>
+<div>✅ Panouri sandwich 40 / 60 / 80 /100 mm</div>
 
-<li>✅ Panouri sandwich termoizolante</li>
+<div>✅ Personalizare completă</div>
 
-<li>✅ Livrare rapidă</li>
+<div>✅ Consultanță gratuită</div>
 
-<li>✅ Ideal pentru birouri, șantiere, depozitare și locuințe modulare</li>
-
-</ul>
+</div>
 
 </section>
 
@@ -63,36 +108,269 @@
 
 <h2>Galerie Foto</h2>
 
-<img src="images/container1.jpg" alt="Container 1">
+<div class="galerie"> 
+<img src="IMG_9834.jpg" alt="Container modular">
 
-<img src="images/container2.jpg" alt="Container 2">
+<img src="IMG_9835.jpg" alt="Container modular">
 
-<img src="images/container3.jpg" alt="Container 3">
+<img src="IMG_9836.jpg" alt="Container modular">
 
-<img src="images/container4.jpg" alt="Container 4">
+<img src="IMG_9837.jpg" alt="Container modular">
+
+<img src="IMG_9838.jpg" alt="Container modular">
+
+<img src="IMG_9839.jpg" alt="Container modular">
+
+<img src="IMG_9840.jpg" alt="Container modular">
+
+<img src="IMG_9841.jpg" alt="Container modular">
+
+<img src="IMG_9842.jpg" alt="Container modular">
+
+<img src="IMG_9843.jpg" alt="Container modular">
+
+<img src="IMG_9844.jpg" alt="Container modular">
+
+<img src="IMG_9845.jpg" alt="Container modular">
+
+<img src="IMG_9846.jpg" alt="Container modular">
+
+<img src="IMG_9847.jpg" alt="Container modular">
+
+</div>
+
+</section>
+
+<section id="configurator">
+
+<h2>📦 Configurează containerul tău</h2>
+
+<p>
+
+Completează configuratorul și primești instant un preț estimativ.
+
+</p>
+
+<input type="text" id="nume" placeholder="👤 Nume și prenume">
+
+<input type="tel" id="telefon" placeholder="📞 Telefon">
+
+<input type="text" id="judet" placeholder="📍 Județ">
+
+<input type="text" id="localitate" placeholder="🏙️ Localitate">
+
+<h3>📏 Dimensiune</h3>
+
+<select id="dimensiune" onchange="calculeazaPret()">
+
+<option value="2200">3 × 2.4 m</option>
+
+<option value="2500">4 × 2.4 m</option>
+
+<option value="2800">6 × 2.4 m</option>
+
+<option value="3200">6 × 3 m</option>
+
+<option value="3800">8 × 2.4 m</option>
+
+<option value="5400">10 × 3 m</option>
+
+</select>
+
+<h3>🧱 Grosime panou</h3>
+
+<select id="panou" onchange="calculeazaPret()">
+
+<option value="0">40 mm</option>
+
+<option value="100">60 mm</option>
+
+<option value="300">80 mm</option>
+
+<option value="600">100 mm</option>
+
+</select> 
+ <h3>🎨 Culoare</h3>
+
+<select id="culoare">
+
+<option>Alb</option>
+
+<option>Antracit</option>
+
+<option>Imitație lemn</option>
+
+</select>
+
+<h3>🚪 Număr uși</h3>
+
+<select id="usi">
+
+<option>1</option>
+
+<option>2</option>
+
+<option>3</option>
+
+</select>
+
+<h3>🪟 Număr ferestre</h3>
+
+<select id="ferestre">
+
+<option>1</option>
+
+<option>2</option>
+
+<option>3</option>
+
+<option>4</option>
+
+</select>
+
+<h3>⚙️ Opțiuni</h3>
+
+<label><input type="checkbox" id="baie" onchange="calculeazaPret()"> 🚿 Baie (+600 €)</label><br><br>
+
+<label><input type="checkbox" id="bucatarie" onchange="calculeazaPret()"> 🍽️ Bucătărie (+800 €)</label><br><br>
+
+<label><input type="checkbox" id="electric" onchange="calculeazaPret()"> ⚡ Instalație electrică (+300 €)</label><br><br>
+
+<label><input type="checkbox" id="ac" onchange="calculeazaPret()"> ❄️ Aer condiționat (+500 €)</label><br><br>
+
+<label><input type="checkbox" id="terasa" onchange="calculeazaPret()"> 🏡 Terasă (+900 €)</label>
+
+<h3>💰 Buget</h3>
+
+<select id="buget">
+
+<option>Sub 15.000 lei</option>
+
+<option>15.000 - 25.000 lei</option>
+
+<option>25.000 - 40.000 lei</option>
+
+<option>Peste 40.000 lei</option>
+
+<option>Personalizat</option>
+
+</select>
+
+<input type="number" id="bugetPersonalizat" placeholder="Buget personalizat">
+
+<h3>📅 Când ai nevoie?</h3>
+
+<select id="termen">
+
+<option>Cât mai repede</option>
+
+<option>În 7 zile</option>
+
+<option>În 30 zile</option>
+
+<option>În 2-3 luni</option>
+
+<option>Peste 3 luni</option>
+
+</select>
+
+<h3>📝 Alte detalii</h3>
+
+<textarea id="detalii" rows="5" placeholder="Scrie cerințele tale..."></textarea>
+
+<h2 id="pretFinal">
+
+💰 Preț estimativ: 2.200 €
+
+</h2>
+
+<button onclick="trimiteWhatsApp()">
+
+🟢 Primește oferta pe WhatsApp
+
+</button>
+
+</section> 
+  <section id="recenzii">
+
+<h2>⭐ Ce spun clienții noștri</h2>
+
+<div class="recenzie">
+
+⭐⭐⭐⭐⭐
+
+<p>„Container de foarte bună calitate și livrare rapidă. Recomand cu încredere!”</p>
+
+<strong>— Marian, Brașov</strong>
+
+</div>
+
+<div class="recenzie">
+
+⭐⭐⭐⭐⭐
+
+<p>„Foarte serioși și profesioniști. Containerul a fost exact cum l-am comandat.”</p>
+
+<strong>— Andrei, Galați</strong>
+
+</div>
+
+<div class="recenzie">
+
+⭐⭐⭐⭐⭐
+
+<p>„Calitate foarte bună și preț corect. Voi mai colabora cu ei.”</p>
+
+<strong>— Daniel, București</strong>
+
+</div>
+
+</section>
+
+<section id="faq">
+
+<h2>❓ Întrebări frecvente</h2>
+
+<h3>În cât timp se livrează?</h3>
+
+<p>În funcție de configurație, între 7 și 30 de zile.</p>
+
+<h3>Livrați în toată România?</h3>
+
+<p>Da, livrăm oriunde în România.</p>
+
+<h3>Se poate personaliza?</h3>
+
+<p>Da. Dimensiunile, culoarea și compartimentarea se realizează la comandă.</p>
 
 </section>
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2>📞 Contact</h2>
 
-<p><strong>Andrei Dumitrescu</strong></p>
+<p><strong>Telefon:</strong> 0799 415 521</p>
 
-<p>📞 079 941 5521</p>
+<p><strong>Email:</strong> casamoda10@icloud.com</p>
 
-<p>📧 Casamoda10@icloud.com</p>
+<p><strong>Livrare în toată România</strong></p>
 
-<p>🚛 Livrare în toată România</p>
+<a class="whatsapp" href="https://wa.me/40799415521" target="_blank">
+
+💬 Contactează-ne pe WhatsApp
+
+</a>
 
 </section>
 
 <footer>
 
-<p>© 2026 Gama PLUS Containere. Toate drepturile rezervate.</p>
+<p>© 2026 GAMA PLUS Containere. Toate drepturile rezervate.</p>
 
 </footer>
+
 <script src="script.js"></script>
+
 </body>
 
 </html> 
